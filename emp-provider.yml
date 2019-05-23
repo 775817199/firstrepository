@@ -1,4 +1,8 @@
-﻿server:
+spring:
+  profiles:
+    active: dev
+---
+server:
   port: 8090 #端口
 spring:
   profiles: dev #开发环境
