@@ -3,27 +3,27 @@ spring:
     active: dev
 ---
 server:
-  port: 8090 #端口
+  port: 8090
 spring:
-  profiles: dev #开发环境
+  profiles: dev
   application:
-    name: emp-provider #注册进服务中心的名字
+    name: emp-provider
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver #数据库驱动
-    url: jdbc:mysql://127.0.0.1:3306/springcloud #数据库url
-    username: root #账密
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/springcloud
+    username: root
     password: root
   jpa:
-    show-sql: true #是否显示sql
+    show-sql: true
     hibernate:
-      ddl-auto: update #根据pojo自动创建表
+      ddl-auto: update
   cache:
     ehcache:
       config: classpath:ehcache.xml
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:8092/eureka/ #注册中心地址
+      defaultZone: http://127.0.0.1:8092/eureka/
   instance:
-    instance-id: ${spring.cloud.client.ipAddress}:${spring.application.name}:${spring.application.instance_id:${server.port}} #注册中心显示的该服务的名称
-    prefer-ip-address: true #显示ip地址
+    instance-id: ${spring.cloud.client.ipAddress}:${spring.application.name}:${spring.application.instance_id:${server.port}}
+    prefer-ip-address: true
