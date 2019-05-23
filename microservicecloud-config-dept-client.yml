@@ -26,7 +26,6 @@ eureka:
       instance-id: dept-8001.com
       prefer-ip-address: true
 ---
----
 server:
   port: 8002
 spring:
