@@ -1,14 +1,13 @@
-server:
-  port: 9527
-eureka:
-  client:
-    service-url:
-      defaultZone: http://eureka1:8761/eureka/,http://eureka2:8762/eureka/
-  #/apiuser/开头的url请求，将转发到eureka-provider这个微服务上
-zuul:
-  routes:
-    deptuser:
-      path: /deptapi/**
-      serviceId: eureka-provider
-  #忽略的服务,多个可以用*
-  ignored-services: "*"
+spring:
+  profiles:
+      active: dev
+---
+spring:
+  profiles: dev #开发环境
+  application:
+       name: microservicecloud-config-sxt-dev
+---
+spring:
+  profiles: test #测试环境
+  application:
+      name: microservicecloud-config-sxt-test
