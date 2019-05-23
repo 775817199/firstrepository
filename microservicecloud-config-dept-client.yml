@@ -53,4 +53,9 @@ info:
    app.name: sxt-microservicecloud
    company.name: www.sxt.cn
    build.artifactId: $project.artifactId$
-   build.version: $project.version$        
+   build.version: $project.version$  
+mybatis:
+  type-aliases-package: com.sxt.pojo
+logging:
+  level:
+    com.sxt.mapper: debug
