@@ -10,7 +10,7 @@ spring:
     name: emp-provider #注册进服务中心的名字
   datasource:
     driver-class-name: com.mysql.jdbc.Driver #数据库驱动
-    url: jdbc:mysql://127.0.0.1:3360/springcloud #数据库url
+    url: jdbc:mysql://127.0.0.1:3306/springcloud #数据库url
     username: root #账密
     password: root
   jpa:
