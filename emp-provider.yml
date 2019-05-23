@@ -7,7 +7,7 @@ server:
 spring:
   profiles: dev #开发环境
   application:
-    name: microservicecloud-config-dept-client #注册进服务中心的名字
+    name: emp-provider #注册进服务中心的名字
   datasource:
     driver-class-name: com.mysql.jdbc.Driver #数据库驱动
     url: jdbc:mysql://127.0.0.1:3360/springcloud #数据库url
