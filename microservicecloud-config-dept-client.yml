@@ -25,6 +25,11 @@ eureka:
    instance:
       instance-id: dept-8001.com
       prefer-ip-address: true
+mybatis:
+  type-aliases-package: com.sxt.pojo
+logging:
+  level:
+    com.sxt.mapper: debug
 ---
 server:
   port: 8002
