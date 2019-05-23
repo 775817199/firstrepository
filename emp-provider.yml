@@ -1,6 +1,7 @@
 ﻿server:
   port: 8090 #端口
 spring:
+  profiles: dev #开发环境
   application:
     name: microservicecloud-config-dept-client #注册进服务中心的名字
   datasource:
