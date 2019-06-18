@@ -11,3 +11,4 @@ spring:
   profiles: test #测试环境
   application:
       name: microservicecloud-config-sxt-test
+#testtest
