@@ -26,10 +26,10 @@ eureka:
       instance-id: dept-8001.com
       prefer-ip-address: true
 mybatis:
-  type-aliases-package: com.sxt.pojo
+  type-aliases-package: com.migu.pojo
 logging:
   level:
-    com.sxt.mapper: debug
+    com.migu.mapper: debug
 ---
 server:
   port: 8002
@@ -56,11 +56,11 @@ eureka:
       prefer-ip-address: true
 info: 
    app.name: sxt-microservicecloud
-   company.name: www.sxt.cn
+   company.name: www.migu.com
    build.artifactId: $project.artifactId$
    build.version: $project.version$  
 mybatis:
-  type-aliases-package: com.sxt.pojo
+  type-aliases-package: com.migu.pojo
 logging:
   level:
-    com.sxt.mapper: debug
+    com.migu.mapper: debug
